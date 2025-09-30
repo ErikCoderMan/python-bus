@@ -2,9 +2,26 @@ from add_passenger import AddPassenger
 from remove_passenger import RemovePassenger
 from show_passengers import ShowPassengers
 from average_age import AverageAge
+import json
+import os
+
+def load_json(filename):
+    if not os.path.exists(filename):
+        return []
+        
+    try:
+        with open(filename, "r") as f:
+            return json.load(f)
+            
+    except json.JSONDecodeError:
+        return []
+
+def save_json(filename, data):
+    with open(filename, "w") as f:
+        json.dump(data, f, indent=4)
 
 def show_menu():
-    max_option=4
+    max_option = 4
     print("Welcome to python-bus")
     print("1. Add a passenger")
     print("2. Remove a passenger")
@@ -16,49 +33,46 @@ def show_menu():
         option = input("Answer: ")
         try:
             option = int(option)
-        
-        except Exception as e:
+            
+        except ValueError:
             print("Please enter a valid number")
             continue
         
         if 0 <= option <= max_option:
             return option
-        
+            
         else:
             print("Please enter a valid number")
-            continue
 
 def main():
-    # list that will be passed as parameter to other classes, it will be updated in place
-    passengers = []
+    filename = "passengers.json"
+    passengers = load_json(filename)
     
     # create objects
-    add_passenger = AddPassenger()
-    remove_passenger = RemovePassenger()
-    show_passengers = ShowPassengers()
-    average_age = AverageAge()
+    add_passenger = AddPassenger(passengers)
+    remove_passenger = RemovePassenger(passengers)
+    show_passengers = ShowPassengers(passengers)
+    average_age = AverageAge(passengers)
     
-    # while loop that runs until user selects option 0
     while True:
         option = show_menu()
         if option == 1:
-            add_passenger.Start(passengers) # method edits list
-        
+            add_passenger.Start()
+            save_json(filename, passengers)
+            
         elif option == 2:
-            remove_passenger.Start(passengers) # method edits list
-        
+            remove_passenger.Start()
+            save_json(filename, passengers)
+            
         elif option == 3:
-            show_passengers.Start(passengers) # method prints out list
+            show_passengers.Start()
             
         elif option == 4:
-            average_age.Start(passengers) # method prints sum divided by list length
-        
+            average_age.Start()
+            
         elif option == 0:
             print("Exiting program")
             return
-    
+
 if __name__ == "__main__":
     main()
-        
-        
-        

@@ -1,7 +1,7 @@
 class AverageAge:
-    def __init__(self):
-        pass
-    
-    def Start(self, passengers):
-        # print average age here
+    def __init__(self, passengers):
+        self.passengers = passengers
+        
+    def Start(self):
         print("inside AverageAge Start method\n")
+        
