@@ -1,7 +1,10 @@
-class AddPassenger:
-    def __init__(self, passengers):
-        self.passengers = passengers
-        
-    def Start(self):
-        print("inside AddPassenger Start method\n")
+class passenger:
+    def __init__(self, age, gender):
+        self.age = age
+        self.gender = gender
+    def __str__(self):
+        return f"passenger(age: {self.age},gender: {self.gender})"
+class bus:
+    def __init__ (self, capacity = 10)
+
         
