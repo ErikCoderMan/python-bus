@@ -1,8 +1,5 @@
-import datetime
-import json
 
-
-class passenger:
+class AddPassenger:
     def __init__(self, name, age, gender, time):
         self.name = name
         self.age = age
@@ -14,6 +11,6 @@ class bus:
     def __init__ (self, capacity = 10):
         self.capacity = capacity
         self.passengers = []
-        
+
 
         
