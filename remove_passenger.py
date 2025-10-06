@@ -8,11 +8,6 @@ class RemovePassenger:
         This method is called from main.py to remove a passenger
         from the list based on its index.
         """
-
-        # Display all passengers with their corresponding index
-        print("Current passengers:")
-        for i, passenger in enumerate(self.passengers):
-            print(f"id: {i}, {passenger}")
         
         try:
             # Ask the user to enter the index of the passenger to remove
