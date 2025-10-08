@@ -9,14 +9,14 @@ class AgeDistribution:
             print("No passengers to show.")
             return
 
-        # Hämta alla åldrar ur listan
+        # Gather all ages from the list of passengers
         ages = [p["age"] for p in self.passengers if "age" in p]
 
-        # Skapa ett histogram
+        # Create a histogram
         plt.figure(figsize=(8, 5))
         plt.hist(ages, bins=range(0, 101, 10), edgecolor='black', alpha=0.7)
 
-        # Sätt x-ticksen på 10, 20, … 100
+        # Set ticks to 10, 20, … 100
         plt.xticks(range(10, 101, 10))
 
         plt.title("Age Distribution of Passengers")
@@ -25,5 +25,5 @@ class AgeDistribution:
         plt.grid(axis='y', alpha=0.3)
         plt.tight_layout()
 
-        # Visa grafen
+        # Show histogram
         plt.show()
