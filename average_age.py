@@ -26,4 +26,4 @@ class AverageAge:
         # Räknar ut medelåldern = summan av alla åldrar/antalet passangerare
         average = sum(ages)/len(ages)
         # Skriver ut genomsnittsåldern med en decimal
-        print(f"Average age of passengers is: {average:1f} years")
+        print(f"Average age of passengers is: {average:.1f} years")
