@@ -14,10 +14,11 @@ class RemovePassenger:
             answer = int(input("Enter id to remove: "))
             
             # Check if the entered index is within the valid range
-            if 0 <= answer < len(self.passengers):
+            if 1 <= answer <= len(self.passengers):
                 # Remove the passenger at the given index
-                removed = self.passengers.pop(answer)
+                removed = self.passengers.pop(answer-1)
                 print(f"Removed passenger: {removed}")
+                
             else:
                 # Index is out of bounds
                 print("Invalid id, please enter a number within the list range.")
