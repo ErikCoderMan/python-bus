@@ -17,11 +17,13 @@ class AddPassenger:
             gender = input("Gender:  ").strip()
             time = datetime.datetime.now().strftime("%H:%M:%S")
             new_person ={
-                "Name": name,
+                "name": name,
                 "age": age,
                 "gender": gender,
                 "time": time
                     }
             self.passengers.append(new_person)
             print(f"Passenger {name} added!")
+        except Exception as e:
+            print(f"Error: {e}")
         
