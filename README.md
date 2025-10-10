@@ -48,8 +48,10 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Run the project (replace with your command):  
-`python main.py`  
+Run the project:
+```
+python main.py
+```
 
 ## Collaborators and Contributions
 - **Asad** — GitHub: [@Asad8687](https://github.com/Asad8687)  
