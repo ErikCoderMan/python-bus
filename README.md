@@ -78,8 +78,3 @@ python3 main.py
   - `age_distribution.py`  
   - `show_passengers.py`  
   - `test_show_passengers.py`
-
-## Notes
- - Known issues or limitations
- - How to test
- - Future improvements
