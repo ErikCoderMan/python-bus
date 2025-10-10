@@ -25,7 +25,7 @@ A bus simulator written in Python.
 1. Clone the repository:
 ```
 git clone https://github.com/erikcoderman/python-bus.git
-cd python-bus`  
+cd python-bus
 ```
 
 2. Create and activate a virtual environment  
