@@ -56,6 +56,7 @@ python3 main.py
 ## Collaborators and Contributions
 - **Asad** — GitHub: [@Asad8687](https://github.com/Asad8687)  
   - `main.py`  
+  - `age_distribution.py`  
   - `add_passenger.py`  
   - `test_add_passenger.py`
 
@@ -68,17 +69,17 @@ python3 main.py
 
 - **David** — GitHub: [@davidfjellstrom](https://github.com/davidfjellstrom)  
   - `main.py`  
+  - `age_distribution.py`  
   - `average_age.py`  
   - `test_average_age.py`
 
 - **Gabriella** — GitHub: [@gcrossie](https://github.com/gcrossie)  
   - `main.py`  
+  - `age_distribution.py`  
   - `show_passengers.py`  
   - `test_show_passengers.py`
 
 ## Notes
-- Known issues or limitations
-- How to test (if applicable)
-- Future improvements
-- Instructor or contact info
-
+ - Known issues or limitations
+ - How to test
+ - Future improvements
