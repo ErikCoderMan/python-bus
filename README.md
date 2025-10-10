@@ -12,6 +12,7 @@ A bus simulator written in Python.
 **Technologies Used:**
 - Python 3 - main programming language.
 - os - used for file operations
+- json - used for storing data
 - datetime - used for handling and formatting dates and times.
 - matplotlib - used for creating visualizations and plots.
 - pytest - used for writing and running tests.
@@ -21,25 +22,24 @@ A bus simulator written in Python.
 
 ## Installation
 1. Clone the repository:  
-    git clone https://github.com/erikcoderman/python-bus.git
-    cd python-bus  
+  `git clone https://github.com/erikcoderman/python-bus.git`  
+  `cd python-bus`  
 
 2. Create and activate a virtual environment  
-
 Windows:  
-    python -m venv venv  
-    venv\Scripts\activate  
+  `python -m venv venv`  
+  `venv\Scripts\activate`  
 
 macOS / Linux:  
-    python3 -m venv venv  
-    source venv/bin/activate  
+  `python3 -m venv venv`  
+  `source venv/bin/activate`  
 
 3. Install dependencies:  
-    pip install -r requirements.txt  
+  `pip install -r requirements.txt`  
 
 ## Usage
 Run the project (replace with your command):  
-    python main.py  
+  `python main.py`  
 
 ## Collaborators and Contributions
 - **Asad** — GitHub: [@Asad8687](https://github.com/Asad8687)  
