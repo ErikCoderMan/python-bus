@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ## Usage
 Run the project:
 ```
-python main.py
+python3 main.py
 ```
 
 ## Collaborators and Contributions
