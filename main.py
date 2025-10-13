@@ -3,6 +3,7 @@ from add_passenger import AddPassenger
 from remove_passenger import RemovePassenger
 from show_passengers import ShowPassengers
 from average_age import AverageAge
+from age_distribution import AgeDistribution
 import json
 import os
 
@@ -25,12 +26,13 @@ def save_json(filename, data):
 
 # Function to display the meny and get user input
 def show_menu():
-    max_option = 4
+    max_option = 5
     print("Welcome to python-bus")
     print("1. Add a passenger")
     print("2. Remove a passenger")
     print("3. Show all passengers")
     print("4. Show average age")
+    print("5. Show age distribution")
     print("0. Exit")
     
     while True:
@@ -58,6 +60,7 @@ def main():
     remove_passenger = RemovePassenger(passengers)
     show_passengers = ShowPassengers(passengers)
     average_age = AverageAge(passengers)
+    age_distribution = AgeDistribution(passengers)
     
     # Loop keeps program running until user chooses "Exit"
     while True:
@@ -75,6 +78,9 @@ def main():
             
         elif option == 4:
             average_age.Start()
+            
+        elif option == 5:
+            age_distribution.show_age_distribution()
             
         elif option == 0:
             print("Exiting program")
