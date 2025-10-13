@@ -6,10 +6,31 @@ A bus simulator written in Python.
 ## About
 
 **Purpose:**
+This was a group project assigned by our teacher.
 
+The purpose was to learn how to collaborate with git and github  
+we learned how to write modular code and use external libraries.
 
 **Course / Assignment:**
 
+Each student had to individually do the following:  
+- Variables and data types
+- Conditions (if/elif/else)
+- Loops (for/while)
+- At least one function
+- At least one class (can be part of the larger project's OOP structure)
+
+The project as a whole had to include the following:  
+- Classes (OOP) – at least one class used in the project.
+- Modules – the project should be divided into several files/modules.
+- Standard libraries – at least two parts should be used (e.g. datetime, os, json, random).
+- External libraries – at least one library/framework outside the standard library (e.g. requests, Flask, matplotlib).
+- Version control (Git/GitHub) – the entire group should actively use GitHub for version control.
+- Documentation – README with:
+- Short description of the project
+- Instructions for installation and execution
+- Who made which file
+- Testing – at least one unit test with PyTest.
 
 **Technologies Used:**
 - Python 3 - main programming language.
@@ -21,6 +42,11 @@ A bus simulator written in Python.
 
 **Learnings:**
 
+In this project we learned how to:  
+- Plan and organize togheter as a team
+- Improved git skills from terminal
+- Solve git conflicts
+- Contribute with modular code as an individual in a larger project
 
 ## Installation
 
