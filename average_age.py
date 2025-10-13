@@ -30,4 +30,3 @@ class AverageAge:
         # Skriver ut genomsnittsåldern med en decimal
         print(result)
         return(result) # För Pytest att läsa och jämföra resultat
-        print(f"Average age of passengers is: {average:.1f} years")
