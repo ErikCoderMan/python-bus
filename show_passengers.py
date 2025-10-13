@@ -5,7 +5,7 @@ class ShowPassengers:
         self.passengers = passengers
 
     # Method to print the passengers
-    def Start(self):
+    def start(self):
         # if no passengers, print "No passengers"
         if not self.passengers:
             print("No passengers")

@@ -66,18 +66,18 @@ def main():
     while True:
         option = show_menu()
         if option == 1:
-            add_passenger.Start()
+            add_passenger.start()
             save_json(filename, passengers)
             
         elif option == 2:
-            remove_passenger.Start()
+            remove_passenger.start()
             save_json(filename, passengers)
             
         elif option == 3:
-            show_passengers.Start()
+            show_passengers.start()
             
         elif option == 4:
-            average_age.Start()
+            average_age.start()
             
         elif option == 5:
             age_distribution.show_age_distribution()

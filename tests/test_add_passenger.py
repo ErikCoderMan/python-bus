@@ -12,7 +12,7 @@ def test_add_passenger(monkeypatch):
         mock_datetime.now.return_value = fake_time
         mock_datetime.strftime = datetime.datetime.strftime
         add = AddPassenger(passengers)
-        add.Start()
+        add.start()
 
     assert len(passengers) == 1
     p = passengers[0]

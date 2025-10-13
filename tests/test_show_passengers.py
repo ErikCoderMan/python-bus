@@ -2,7 +2,7 @@ from show_passengers import ShowPassengers
 
 def test_start_no_passengers(capsys):
     sp = ShowPassengers([])
-    sp.Start()
+    sp.start()
     output = capsys.readouterr().out.strip()
     assert output == "No passengers"
 
@@ -12,7 +12,7 @@ def test_start_with_passengers(capsys):
         {"name": "Bob", "age": 25, "gender": "Male", "time": "11:00:00"}
     ]
     sp = ShowPassengers(passengers)
-    sp.Start()
+    sp.start()
     lines = capsys.readouterr().out.strip().split("\n")
 
     assert lines[0] == "Passengers:"

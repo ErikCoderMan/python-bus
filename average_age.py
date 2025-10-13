@@ -6,7 +6,7 @@ class AverageAge:
         self.passengers = passengers # Sparar listan på objektet så vi kan använda den senare
     
     # Metoden start körs när användaren väljer menyval 4 i main-filen
-    def Start(self):
+    def start(self):
         # Om det inte finns några passangerare alls, skriver ut sträng och avslutar.
         if not self.passengers:
             print("No passengers are on the bus.")

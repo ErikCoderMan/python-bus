@@ -3,7 +3,7 @@ import datetime
 class AddPassenger:
     def __init__(self, passengers):
         self.passengers = passengers
-    def Start(self):
+    def start(self):
         print("Add passenger")
         try:
             name = input("Name:  ").strip().title()

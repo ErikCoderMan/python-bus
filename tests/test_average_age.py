@@ -10,7 +10,7 @@ from average_age import AverageAge
 def test_average_age_no_passengers():
     passengers = []
     avg = AverageAge(passengers)
-    result = avg.Start()
+    result = avg.start()
     assert result == "No passengers are on the bus."
 
 
@@ -22,7 +22,7 @@ def test_average_age_missing_age_key():
         {"name": "Gabriella", "age": 29}
     ]
     avg = AverageAge(passengers)
-    result = avg.Start()
+    result = avg.start()
     assert result == "Average age of passengers is: 29.0 years"
 
 
@@ -34,7 +34,7 @@ def test_all_ages_missing():
         {"name": "Gabriella"}
     ]
     avg = AverageAge(passengers)
-    result = avg.Start()
+    result = avg.start()
     assert result == "No ages available for passengers."
 
 
@@ -46,5 +46,5 @@ def test_average_age_normal_case():
         {"name": "Erik", "age": 29}
     ]
     avg = AverageAge(passengers)
-    result = avg.Start()
+    result = avg.start()
     assert result == "Average age of passengers is: 30.3 years"

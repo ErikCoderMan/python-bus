@@ -3,7 +3,7 @@ class RemovePassenger:
         # Store the list of passengers. This list will be modified "in place".
         self.passengers = passengers
         
-    def Start(self):
+    def start(self):
         """
         This method is called from main.py to remove a passenger
         from the list based on its index.

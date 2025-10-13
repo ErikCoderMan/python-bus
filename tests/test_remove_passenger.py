@@ -24,7 +24,7 @@ def test_remove_valid_index():
     remover = RemovePassenger(passengers)
 
     with patch("builtins.input", return_value="2"):
-        remover.Start()
+        remover.start()
 
     # Bob should be removed from the list
     assert len(passengers) == 2
@@ -39,7 +39,7 @@ def test_remove_invalid_index():
     remover = RemovePassenger(passengers)
 
     with patch("builtins.input", return_value="5"):
-        remover.Start()
+        remover.start()
 
     # No passenger should be removed since index is out of range
     assert len(passengers) == 2
@@ -54,7 +54,7 @@ def test_remove_non_numeric_input():
     remover = RemovePassenger(passengers)
 
     with patch("builtins.input", return_value="abc"):
-        remover.Start()
+        remover.start()
 
     # No passenger should be removed since input is not numeric
     assert len(passengers) == 2
@@ -71,13 +71,13 @@ def test_remove_first_and_last():
 
     # Remove the first passenger
     with patch("builtins.input", return_value="1"):
-        remover.Start()
+        remover.start()
         
     assert passengers[0]["name"] == "Bob"
 
     # Remove the last passenger (now index 1)
     with patch("builtins.input", return_value="2"):
-        remover.Start()
+        remover.start()
         
     assert passengers[0]["name"] == "Bob"
     assert len(passengers) == 1
@@ -87,7 +87,7 @@ def test_remove_from_empty_list():
     remover = RemovePassenger(passengers)
 
     with patch("builtins.input", return_value="1"):
-        remover.Start()
+        remover.start()
 
     # The list should remain empty
     assert passengers == []
