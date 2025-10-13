@@ -10,20 +10,23 @@ class AverageAge:
         # Om det inte finns några passangerare alls, skriver ut sträng och avslutar.
         if not self.passengers:
             print("No passengers are on the bus.")
-            return
+            return "No passengers are on the bus." # Return används för att möjliggöra pytest
 
         # Skapar tom lista för alla åldrar    
         ages = []
         for passenger in self.passengers: # Går igenom varje passangerare
-            if "age" in passenger: # Kollar att passangerare har en ålder
+            if "age" in passenger and passenger["age"] is not None: # Kollar att passangerare har en ålder
                 ages.append(passenger["age"]) # Lägger till åldern i listan ages
 
-        # Om ingen har ålder lagrad, skriver ut meddelande och avslutar.
+        # Om ingen ålder på passangerare finns lagrad, skriver ut meddelande och avslutar.
         if not ages:
             print("No ages available for passengers.")
-            return
+            return "No ages available for passengers." # Return används för pytest
         
-        # Räknar ut medelåldern = summan av alla åldrar/antalet passangerare
+        # Räknar ut medelåldern = summan av alla åldrar / antalet passangerare
         average = sum(ages)/len(ages)
+        result = f"Average age of passengers is: {average:.1f} years"
+
         # Skriver ut genomsnittsåldern med en decimal
-        print(f"Average age of passengers is: {average:1f} years")
+        print(result)
+        return(result) # För Pytest att läsa och jämföra resultat
