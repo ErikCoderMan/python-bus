@@ -5,7 +5,7 @@ A bus simulator written in Python.
 
 ## About
 
-**Purpose:**
+**Purpose:**  
 This was a group project assigned by our teacher.
 
 The purpose was to learn how to collaborate with git and github  
