@@ -1,6 +1,8 @@
 # Python-bus
 A bus simulator written in Python.
 
+![Flowchart](images/python-bus-drawio.png)
+
 ## About
 
 **Purpose:**
