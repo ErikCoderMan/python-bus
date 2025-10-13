@@ -6,7 +6,7 @@ class AddPassenger:
     def Start(self):
         print("Add passenger")
         try:
-            name = input("Name:  ").strip()
+            name = input("Name:  ").strip().title()
             while True:
                 age_input = input("Age:  ").strip()
                 if age_input.isdigit():
@@ -14,7 +14,7 @@ class AddPassenger:
                     break
                 else:
                     print("Enter a valid number")
-            gender = input("Gender:  ").strip()
+            gender = input("Gender:  ").strip().title()
             time = datetime.datetime.now().strftime("%H:%M:%S")
             new_person ={
                 "name": name,
