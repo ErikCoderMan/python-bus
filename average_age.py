@@ -1,5 +1,5 @@
 class AverageAge:
-    # Metoden init importerar in listan "passengers" med passangerare från JSON-filen
+    # Metoden init hämtar in listan "passengers" med passangerare från JSON-filen
     def __init__(self, passengers):
         self.passengers = passengers # Sparar listan på objektet så vi kan använda den senare
     
